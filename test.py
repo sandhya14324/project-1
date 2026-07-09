@@ -29,4 +29,4 @@
 # s2=dog()
 # s2.eat()  
 # s2.sleep()
-# s2.sitting()          
+# s2.sitting()         

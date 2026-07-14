@@ -69,4 +69,11 @@
 # os.remove("test.txt")
 # os.unlink("data.txt")
 # today
-n=open("main.py","a")
+# n=open("main.py","a")
+a=10
+b=2
+print(a**b)
+x=10
+x+=15
+print(x)                                                                                                                                                             
+

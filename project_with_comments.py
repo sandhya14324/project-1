@@ -1,11 +1,14 @@
-# Importing required libraries
-import numpy as np                 # Mathematical functions
-import pandas as pd                # Data analysis library
-import mysql.connector             # Connecting Python to MySQL
+"""
+Student Performance Analysis
+Connects to MySQL,analyzes exam data data with Pandas+Numpy,
+and exports result to an Excel file with Multiple Sheets.
+"""
+import mysql.connector 
+import numpy as np                 
+import pandas as pd               
+             
+# 1.Connect to MySQL Database
 
-# -----------------------------
-# Connect to MySQL Database
-# -----------------------------
 conn = mysql.connector.connect(
     host="localhost",
     user="root",
@@ -17,7 +20,7 @@ print("Connection established successfully!")
 
 # Create cursor object
 cursor = conn.cursor()
-
+cursor.execute("show tables")
 # ==========================================================
 # 1. Calculate Total Marks of Each Student
 # ==========================================================
